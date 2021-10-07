@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>Futam</th>
+    <th>Dátum</th>
+    <th>Győztes</th>
+    <th>Csapat</th>
+    <th>Körök száma</th>
+  </tr>
+  <tr *ngFor="let result of results; let i = index; odd as isOdd" (click)="selected(i)" [class.selected]="selectedResultIndex === i" [ngClass]="{odd: isOdd, even: !isOdd}">
+    <td>{{result.grandPrix}}</td>
+    <td>{{result.date | date:'shortDate'}}</td>
+    <td>{{result.winner}}</td>
+    <td>{{result.team | uppercase}}</td>
+    <td>{{result.laps}}</td>
+  </tr>
+</table>

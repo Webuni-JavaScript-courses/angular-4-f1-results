@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ressults, Result } from './results';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular4-f1-standings';
+  results = ressults;
+  selectedResultIndex: number | undefined;
 }

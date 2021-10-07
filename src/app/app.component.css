@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.table {
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
